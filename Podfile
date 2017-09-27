@@ -8,7 +8,7 @@ target 'Leanplum-tvOS-SDK-Example' do
     if ENV['LP_SOURCES']
         print("Installing Leanplum using SOURCES/DYNAMIC\n")
         use_frameworks!
-        pod 'Leanplum-tvOS-SDK-source', :path => '../SDK/Apple/Leanplum-iOS-SDK/'
+        pod 'Leanplum-tvOS-SDK-source', :path => '../Leanplum-iOS-SDK/'
     else
         print("Installing Leanplum using PACKAGED/DYNAMIC\n")
         use_frameworks!
