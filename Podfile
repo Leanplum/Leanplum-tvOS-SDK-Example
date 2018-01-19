@@ -1,10 +1,10 @@
-LP_VERSION = ENV['LP_VERSION'] ? ENV['LP_VERSION'] : '2.0.2'
+LP_VERSION = ENV['LP_VERSION'] ? ENV['LP_VERSION'] : '2.0.5'
 
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Leanplum/CocoaPods.git'
 
 target 'Leanplum-tvOS-SDK-Example' do
-    platform :tvos, 8.0
+    platform :tvos, 9.0
     if ENV['LP_SOURCES']
         print("Installing Leanplum using SOURCES/DYNAMIC\n")
         use_frameworks!
