@@ -31,6 +31,9 @@
 - (IBAction)onExampleClicked:(id)sender {
     NSString* method = self.data[@"method"];
     [Leanplum track:method];
+    [Leanplum track:@"CraigAppleTVTest"];
+    NSLog(@"CraigAppleTVTest");
+
 }
 
 @end
