@@ -4,7 +4,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Leanplum/CocoaPods.git'
 
 target 'Leanplum-tvOS-SDK-Example' do
-    platform :tvos, 9.0
+    platform :tvos, '11.2.1'
     if ENV['LP_SOURCES']
         print("Installing Leanplum using SOURCES/DYNAMIC\n")
         use_frameworks!
