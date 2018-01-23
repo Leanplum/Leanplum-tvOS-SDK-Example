@@ -57,15 +57,16 @@
 
 - (void)configureLeanplum {
     // warning: Only used for testing purposes, do not use in production.
-    [Leanplum setApiHostName:LP_API_HOST_NAME withServletName:@"api" usingSsl:LP_API_SSL];
-    
+//    [Leanplum setApiHostName:LP_API_HOST_NAME withServletName:@"api" usingSsl:LP_API_SSL];
+
     #ifdef DEBUG
         [Leanplum setAppId:LP_APP_ID withDevelopmentKey:LP_DEVELOPMENT_KEY];
     #else
         [Leanplum setAppId:LP_APP_ID withProductionKey:LP_PRODUCTION_KEY];
     #endif
-    [Leanplum trackAllAppScreens];
     [Leanplum start];
+    [Leanplum setUserId:@"craig2@leanplum.com"];
+
 }
 
 @end
